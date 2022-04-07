@@ -1,0 +1,11 @@
+pandas
+scikit-learn
+opencv-contrib-python
+numpy
+matplotlib
+seaborn
+plotly
+flask
+streamlit
+ipykernel
+xgboost

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello for ML</h1>
+    <form method="post">
+        <div class="form-wrapper">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div class="form-wrapper">
+            <label for="sal">Salary</label>
+            <input type="number" name="salary" id="sal">
+        </div>
+        <button>Predict Purchase</button>
+    </form>
+    <div>
+        <h4>Prediction for Age: {{age}} & Salary: {{salary}}</h4>
+        <h1>{{result}}</h1>
+    </div>
+    <div class="history">
+        <h1>Previous Predictions</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Age</th>
+                    <th>Salary</th> 
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for record in history %}
+                <tr>
+                    <td>{{record.age}}</td>
+                    <td>{{record.salary}}</td>
+                    <td>{{record.prediction}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

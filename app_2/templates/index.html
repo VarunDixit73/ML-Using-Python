@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello for ML</h1>
+    <form method="post">
+        <div class="form-wrapper">
+            <label for="preg">Pregnancies</label>
+            <input type="number" name="Pregnancies" id="preg">
+        </div>
+        <form method="post">
+            <div class="form-wrapper">
+                <label for="gluc">Glucose</label>
+                <input type="number" name="Glucose" id="gluc">
+            </div>
+        <form method="post">
+            <div class="form-wrapper">
+                <label for="bmi">BMI</label>
+                <input type="number" name="BMI" id="bmi">
+            </div>
+        <form method="post">
+            <div class="form-wrapper">
+                <label for="ped">pedigree</label>
+                <input type="number" name="pedigree" id="ped">
+            </div>
+            <button>Predict Diabetes</button>
+    </form>
+    <div>
+        <h4>Prediction for Pregnancies: {{Pregnancies}} & Glucose: {{Glucose}} & BMI:{{BMI}} & pedigree{{pedigree}}</h4>
+        <h1>{{result}}</h1>
+    </div>
+    
+</body>
+</html>
